@@ -6,24 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Franklin Valdivia - Alcalde de Paucarpata</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-        <nav>
-            <img class="Icon" src="./images/FA-logo.png" alt="">
-        </nav>
+      <nav>
+        <img class="Icon" src="./images/FA-logo.png" alt="" />
+      </nav>
     </header>
-    <div class="Slider">
-        
+    <div class="SliderContainer">
+      <div class="slider" id="slider">
+        <div class="slider__section img_container">
+          <img
+            src="./images/Sample_Slider_1.jpg"
+            alt=""
+            srcset=""
+            class="slider__img"
+          />
+        </div>
+        <div class="slider__section img_container">
+          <img
+            src="./images/Sample_Slider_2.jpg"
+            alt=""
+            srcset=""
+            class="slider__img"
+          />
+        </div>
+        <div class="slider__section img_container">
+          <img
+            src="./images/Sample_Slider_3.jpg"
+            alt=""
+            srcset=""
+            class="slider__img"
+          />
+        </div>
+        <div class="slider__section img_container">
+          <img
+            src="./images/Sample_Slider_4.jpg"
+            alt=""
+            srcset=""
+            class="slider__img"
+          />
+        </div>
+      </div>
+
+      <div class="slider__btn slider__btn--right" id="btn-right">></div>
+      <div class="slider__btn slider__btn--left" id="btn-left"><</div>
     </div>
     <div class="Miniatures">
-        <a href="">Propuestas</a>
-        <a href="">Hoja de vida</a>
-        <a href="">Galería de fotos</a>
+      <a class="primaryButton" href="">PROPUESTAS</a>
+      <a class="primaryButton" href="">HOJA DE VIDA</a>
+      <a class="primaryButton" href="">GALERÍA DE FOTOS</a>
     </div>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
   <script src="./js/index.js"></script>
 </html>

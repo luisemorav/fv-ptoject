@@ -4,10 +4,6 @@ body {
     height: 100vh;
 }
 
-div, header, footer {
-    border: solid 1px;
-}
-
 /* Header Styles */
 nav {
     background-color: red;
@@ -18,19 +14,97 @@ nav {
     width: 70px;
 }
 
-/* Slider Styles */
-.Slider {
-    background-color: aquamarine;
+/*--------------------- Slider Styles -------------------*/
+
+.SliderContainer {
+    background-color: rgb(255, 255, 255);
     height: 50%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    margin-left: -100%;
+}
+
+.slider__section {
+    display: flex;
+}
+
+.img_container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider__img {
+    display: block;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.slider__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn:hover {
+    background: #fff;
+}
+
+.slider__btn--left {
+    left: 10px;
+}
+
+.slider__btn--right {
+    right: 10px;
 }
 
 /* Miniatures Styles */
 .Miniatures {
-    height: 25%;
+    background-color: aliceblue;
+}
+
+.primaryButton {
+    background-color: red;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    padding-block: 20px;
+    display: block;
+    margin: 10px;
 }
 
 /* Footer Styles */
 footer {
-    background-color: darkblue;
+    background-color: rgb(95, 95, 95);
     height: 20%;
+}
+
+@media (min-width: 500px) {
+
+/* Slider Styles */
+.SliderContainer {
+    height: 80%;
+}
+
+
 }
