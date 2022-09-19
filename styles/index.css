@@ -1,110 +1,232 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-/* Header Styles */
+/*--------------------- Header Styles --------------------*/
 nav {
-    background-color: red;
-    height: 40px;
+  background-color: rgb(236, 45, 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Highligth {
+  color: black;
+}
+
+.Header_title {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  margin-left: 70px;
 }
 
 .Icon {
-    width: 70px;
+  width: 70px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 3;
 }
 
 /*--------------------- Slider Styles -------------------*/
 
 .SliderContainer {
-    background-color: rgb(255, 255, 255);
-    height: 50%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    display: flex;
+  background-color: rgb(255, 255, 255);
+  height: 55%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
 }
 
 .slider {
-    display: flex;
-    width: 400%;
-    height: 100%;
-    margin-left: -100%;
+  display: flex;
+  width: 400%;
+  height: 100%;
+  margin-left: -100%;
 }
 
 .slider__section {
-    display: flex;
+  display: flex;
 }
 
 .img_container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .slider__img {
-    display: block;
-    width: 100vw;
-    object-fit: cover;
+  display: block;
+  width: 100vw;
+  object-fit: cover;
 }
 
 .slider__btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.7);
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    font-weight: bold;
-    font-family: monospace;
-    text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(74, 74, 74, 0.6);
+  color: rgba(255, 255, 255, 0.9);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .slider__btn:hover {
-    background: #fff;
+  background: rgba(123, 123, 123, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .slider__btn--left {
-    left: 10px;
+  left: 10px;
 }
 
 .slider__btn--right {
-    right: 10px;
+  right: 10px;
 }
 
-/* Miniatures Styles */
+/*--------------------- Miniatures Styles --------------------------*/
 .Miniatures {
-    background-color: aliceblue;
+  background-color: aliceblue;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.4em;
 }
 
 .primaryButton {
-    background-color: red;
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 0.9em;
-    font-weight: 400;
-    text-decoration: none;
-    text-align: center;
-    padding-block: 20px;
-    display: block;
-    margin: 10px;
+  background-color: rgb(236, 45, 37);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
 }
 
 /* Footer Styles */
 footer {
-    background-color: rgb(95, 95, 95);
-    height: 20%;
+  background-color: rgb(95, 95, 95);
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (min-width: 500px) {
+footer>h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 100;
+    color: rgb(212, 212, 212);
+    margin: 0;
+}
 
-/* Slider Styles */
-.SliderContainer {
+footer>div{
+    width: 40%;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+footer i {
+    font-size: 2em;
+    color: #fff;
+}
+
+/*------------------------------ PANTALLA GRANDE ------------------------------*/
+
+@media (min-width: 700px) {
+  /*--------------------- Header Styles --------------------*/
+  nav {
+    background-color: rgb(236, 45, 37);
+    height: 100px;
+  }
+
+  .Header_title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    margin-left: 150px;
+  }
+
+  .Light {
+    font-size: 35px;
+    font-weight: 100;
+  }
+
+  .Icon {
+    width: 150px;
+    left: 20px;
+    top: 20px;
+  }
+
+  /*--------------------- Slider Styles --------------------*/
+
+  .SliderContainer {
     height: 80%;
-}
+  }
 
+  .slider__btn {
+    width: 50px;
+    height: 80px;
+    background: rgba(123, 123, 123, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    cursor: pointer;
+  }
 
+  .slider__btn:hover {
+    background: rgba(123, 123, 123, 0.8);
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  /*---------------------- Miniatures Styles -----------------------*/
+  .Miniatures {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.4em;
+  }
+
+  .primaryButton {
+    background-image: linear-gradient(
+        rgba(236, 45, 37, 1),
+        rgba(236, 45, 37, 1)
+      ),
+      url(../images/Button_Background.jpg);
+    font-size: 1.4em;
+    font-weight: 700;
+    width: 30%;
+    height: 100%;
+    transition: 0.4s ease-in-out all;
+  }
+
+  .primaryButton:hover {
+    background-image: linear-gradient(
+        rgba(236, 45, 37, 0.5),
+        rgba(236, 45, 37, 0.5)
+      ),
+      url(../images/Button_Background.jpg);
+  }
 }
