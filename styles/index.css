@@ -31,6 +31,7 @@ nav {
   right: 0;
   left: 0;
   z-index: 3;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*--------------------- Slider Styles -------------------*/
@@ -101,7 +102,7 @@ nav {
   height: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0.4em;
 }
 
@@ -119,7 +120,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30%;
+  height: 32%;
+}
+
+.primaryButton:hover {
+    background-color: rgb(255, 25, 0);
 }
 
 /* Footer Styles */
