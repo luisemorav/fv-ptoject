@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Franklin Valdivia - Alcalde de Paucarpata - Hoja de Vida</title>
+    <title>Franklin Valdivia - Alcalde de Paucarpata - Galería de Fotos</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/hdv.css" />
+    <link rel="stylesheet" href="./styles/galeria.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,18 +27,27 @@
       </nav>
     </header>
     <div class="Container">
-    <h1>HOJA DE VIDA</h1>
+    <h1>GALERÍA DE FOTOS</h1>
     <a href="./index.html"><i class="fas fa-chevron-left"></i> Regresar</a>
-    <div class="Hdv">
-        <div class="hdvTxt">
-            <p>Hola, soy <span class="black">Franklin Valdivia</span>, Economista de profesión, Magíster en Gerencia Pública, y vengo a traer para <span class="black">Paucarpata</span> una propuesta de Esperanza, una propuesta de Trabajo, una propuesta de Modernidad. <br> Quiero un <span class="red">distrito</span>  <span class="black">LIMPIO</span>, <span class="red">SEGURO</span> y <span class="black">MODERNO</span>. </p>
+<!-- INICIA CONT -->
+    <div class="Gal">
+        <div class="imgShow">
+            <img id="vistaImg" src="./images/galeria/gal_1.jpg" alt="">
+            <p id="txtResena">Reseña de la imagen. Lorem ipsum dolor sit amet consectetur adipisicing elit.Velit voluptatum eos tenetur blanditiis dolore nostrum nihil voluptate libero consequatur temporibus.</p>
         </div>
-
-        <div class="hdvImg">
-            <img src="./images/otros/hdv.JPG" alt="Frank Valdivia">
+        <div class="selectorImg">
+            <img onclick="loadImg(0)" src="./images/galeria/gal_1.jpg" alt="">
+            <img onclick="loadImg(1)" src="./images/galeria/gal_2.jpg" alt="">
+            <img onclick="loadImg(2)" src="./images/galeria/gal_3.jpg" alt="">
+            <img onclick="loadImg(3)" src="./images/galeria/gal_4.jpg" alt="">
+            <img onclick="loadImg(4)" src="./images/galeria/gal_5.jpg" alt="">
+            <img onclick="loadImg(5)" src="./images/galeria/gal_6.jpg" alt="">
+            <img onclick="loadImg(6)" src="./images/galeria/gal_7.jpg" alt="">
+            <img onclick="loadImg(7)" src="./images/galeria/gal_8.jpg" alt="">
+            <img onclick="loadImg(8)" src="./images/galeria/gal_9.jpg" alt="">
         </div>
-        
     </div>
+<!-- TERMINA CONT -->
     <a href="./index.html"><i class="fas fa-chevron-left"></i> Regresar</a>
     </div>
     <footer>
@@ -49,4 +59,5 @@
       </div>
     </footer>
   </body>
+  <script src="./js/galeria.js"></script>
 </html>

@@ -29,10 +29,14 @@ nav {
 .Header_title {
   color: #fff;
   font-size: 1.3em;
-  font-weight: 400;
+  font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   margin-left: 70px;
+}
+
+.Light {
+  font-weight: 100;
 }
 
 .Icon {
@@ -134,7 +138,7 @@ nav {
 }
 
 .primaryButton:hover {
-    background-color: rgb(255, 25, 0);
+  background-color: rgb(255, 25, 0);
 }
 
 /* Footer Styles */
@@ -147,24 +151,24 @@ footer {
   align-items: center;
 }
 
-footer>h3 {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 100;
-    color: rgb(212, 212, 212);
-    margin: 0;
+footer > h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  color: rgb(212, 212, 212);
+  margin: 0;
 }
 
-footer>div{
-    width: 40%;
-    max-width: 200px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1em;
+footer > div {
+  width: 40%;
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
 }
 
 footer i {
-    font-size: 2em;
-    color: #fff;
+  font-size: 2em;
+  color: #fff;
 }
 
 /*------------------------------ PANTALLA GRANDE ------------------------------*/
@@ -225,16 +229,12 @@ footer i {
   }
 
   .primaryButton {
-    background-image: linear-gradient(
-        rgba(236, 45, 37, 1),
-        rgba(236, 45, 37, 1)
-      ),
-      url(../images/otros/Button_Background.jpg);
+    background-color: rgb(236, 45, 37);
     font-size: 1.4em;
     font-weight: 700;
     width: 30%;
     height: 100%;
-    transition: 0.4s ease-in-out all;
+    transition-duration: 0.5s;
   }
 
   .primaryButton:hover {
@@ -243,5 +243,6 @@ footer i {
         rgba(236, 45, 37, 0.5)
       ),
       url(../images/otros/Button_Background.jpg);
+    transform: scale(1.03);
   }
 }
