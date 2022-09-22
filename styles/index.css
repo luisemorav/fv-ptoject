@@ -4,6 +4,16 @@ body {
   height: 100vh;
 }
 
+/*------c variables ---------*/
+.red {
+  color: rgb(236, 45, 37);
+  font-weight: 700;
+}
+.black {
+  color: black;
+  font-weight: 700;
+}
+
 /*--------------------- Header Styles --------------------*/
 nav {
   background-color: rgb(236, 45, 37);
@@ -219,7 +229,7 @@ footer i {
         rgba(236, 45, 37, 1),
         rgba(236, 45, 37, 1)
       ),
-      url(../images/Button_Background.jpg);
+      url(../images/otros/Button_Background.jpg);
     font-size: 1.4em;
     font-weight: 700;
     width: 30%;
@@ -232,6 +242,6 @@ footer i {
         rgba(236, 45, 37, 0.5),
         rgba(236, 45, 37, 0.5)
       ),
-      url(../images/Button_Background.jpg);
+      url(../images/otros/Button_Background.jpg);
   }
 }
