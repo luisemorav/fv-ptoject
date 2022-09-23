@@ -1,13 +1,13 @@
 let textos = [
-  "texto1",
-  "texto2",
-  "texto3",
-  "texto4",
-  "texto5",
-  "texto6",
-  "texto7",
-  "texto8",
-  "texto9",
+  "Visitando el mercado de Paucarpata, compartiendo nuestras ideas con nuestro pueblo.",
+  "Asociación de Comerciantes de la Chacra a la Olla, compartiendo con nuestro pueblo las propuestas para seguir mejorarando",
+  "La importancia de conocer el dia a dia de nuestros comerciantes",
+  "Observando y escuchando las carencias de los comerciantes para la creación del mercado mayorista",
+  "Nuestra gestión trabajará de la mano con la población.",
+  "En nuestro gobierno no olvidaremos a nuestros adultos mayores.",
+  "Vecino paucarta con tu voto y nuestra experiencia haremos un distrito mejor!.",
+  "Tu opinión importa",
+  "Porque tu bienestar es importante haremos de Paucarpata un lugar limpio y saludable ",
 ];
 
 let imagenes = [
