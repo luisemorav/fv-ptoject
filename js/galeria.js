@@ -5,9 +5,13 @@ let textos = [
   "Observando y escuchando las carencias de los comerciantes para la creación del mercado mayorista",
   "Nuestra gestión trabajará de la mano con la población.",
   "En nuestro gobierno no olvidaremos a nuestros adultos mayores.",
-  "Vecino paucarta con tu voto y nuestra experiencia haremos un distrito mejor!.",
+  "Vecino paucarpata con tu voto y nuestra experiencia haremos un distrito mejor!.",
   "Tu opinión importa",
-  "Porque tu bienestar es importante haremos de Paucarpata un lugar limpio y saludable ",
+  "Porque tu bienestar es importante, haremos de Paucarpata un lugar limpio y saludable ",
+  "De la mano con nuestros vecinos, mejoraremos nuestro Distrito.",
+  "El deporte es salud, total apoyo al deporte.",
+  "Te escucho Paucarpata.",
+  "Los niños son prioridad en nuestra Gestión, son el futuro de nuestro distrito.",
 ];
 
 let imagenes = [
@@ -20,6 +24,10 @@ let imagenes = [
   "./images/galeria/gal_7.jpg",
   "./images/galeria/gal_8.jpg",
   "./images/galeria/gal_9.jpg",
+  "./images/galeria/gal_10.jpg",
+  "./images/galeria/gal_11.jpg",
+  "./images/galeria/gal_12.jpg",
+  "./images/galeria/gal_13.jpg",
 ];
 
 function loadImg(img) {
