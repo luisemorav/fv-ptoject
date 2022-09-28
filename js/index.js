@@ -1,4 +1,22 @@
 const slider = document.querySelector("#slider");
+
+function SliderDraw(a) {
+  for (let i=1; i <= a; i++){
+    slider.innerHTML += `
+    <div class="slider__section img_container">
+      <img
+        src="./images/slider/Sample_Slider_${i}.jpg"
+        alt=""
+        srcset=""
+        class="slider__img"
+      />
+    </div>
+    `
+  }
+}
+
+SliderDraw(4);
+
 let sliderSection = document.querySelectorAll(".slider__section");
 let sliderSectionLast = sliderSection[sliderSection.length - 1];
 
